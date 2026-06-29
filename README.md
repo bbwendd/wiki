@@ -16,8 +16,9 @@ AI 或人員進入本資料夾時，請先讀：
 4. `schema/CONFIRM_PLAN_CHECKLIST.md`
 5. `schema/SUB_AGENT_RULES.md`
 6. `schema/ABCDE_RUBRIC.md`
-7. `wiki/首頁.md`
-8. `wiki/dashboards/工作總覽.md`
+7. `schema/MCP_CONNECTOR_MAP.md`
+8. `wiki/首頁.md`
+9. `wiki/dashboards/工作總覽.md`
 
 ## Karpathy 方法在這裡的做法
 
@@ -47,6 +48,18 @@ AI 或人員進入本資料夾時，請先讀：
 
 若 ABCDE 未達標準，不可交付，必須退回修正。
 
+## v1.1 落地補強
+
+為了讓流程能被穩定複製，已補上以下可直接套用的範本與狀態表：
+
+- `schema/templates/confirm_plan.md`：Plan Mode 進入 Auto Mode 前的確認模板。
+- `schema/templates/subagent_task.md`：Research、Producer、Evaluator、Orchestrator 任務指派模板。
+- `schema/MCP_CONNECTOR_MAP.md`：Gmail、Calendar、Drive、GitHub、Canva、Slack、Line 替代方案、音檔轉錄與 web search 的能力邊界。
+- `wiki/examples/ABCDE評估範例.md`：可交付與不可交付的 evaluator gate 範例。
+- `wiki/workflows/交付封存流程.md`：交付後保存版本、來源、評估與待辦的流程。
+- `automations/AUTOMATION_STATUS.md`：自動化啟用、授權、失敗與 no-hit 狀態表。
+- `wiki/projects/第二大腦複製人範例專案.md`：標準專案頁示範。
+
 ## 8 大能力模組
 
 - 溝通助理：Email、Line、英文溝通、國外講者邀請。
@@ -68,7 +81,10 @@ AI 或人員進入本資料夾時，請先讀：
 本地化後的重點檔案：
 
 - `schema/GITHUB_WORKFLOW_REFERENCES.md`
+- `schema/MCP_CONNECTOR_MAP.md`
 - `schema/METADATA_RULES.md`
 - `schema/templates/daily_note.md`
+- `schema/templates/confirm_plan.md`
+- `schema/templates/subagent_task.md`
 - `schema/templates/task_line.md`
 - `wiki/dashboards/工作總覽.md`

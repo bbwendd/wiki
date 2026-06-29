@@ -20,6 +20,7 @@
 - `schema/LAYER_RULES.md`
 - `schema/SKILL_MAP.md`
 - `schema/TOOL_USE_RULES.md`
+- `schema/MCP_CONNECTOR_MAP.md`
 - `schema/OUTPUT_STANDARDS.md`
 - `schema/METADATA_RULES.md`
 - `schema/GOV_BID_RULES.md`
@@ -46,8 +47,10 @@
 - 依 `schema/LAYER_RULES.md` 判斷資料應該進 raw、wiki、schema 或 automations。
 - 依 `schema/SKILL_MAP.md` 選擇 Raw Intake、Wiki Distillation、Schema Distillation、Automation Design 或 Daily Operator。
 - 依 `schema/CAPABILITY_MAP.md` 判斷任務屬於 8 大能力模組中的哪一類。
+- 需要外部工具或資料時，依 `schema/MCP_CONNECTOR_MAP.md` 判斷 connector 可用範圍、替代方式與禁止事項。
 - 產出 Email、文件、簡報、表格、標案、活動企劃前，先讀 `schema/OUTPUT_STANDARDS.md` 與對應 workflow。
 - 複雜任務依 `schema/SUB_AGENT_RULES.md` 分派 Research、Producer、Evaluator 角色。
+- 正式交付後，依 `wiki/workflows/交付封存流程.md` 保存版本、來源、ABCDE 結論與後續待辦。
 
 ## 預設輸出語氣
 

@@ -173,6 +173,7 @@
 - Plan Mode 計畫。
 - Confirm Plan 檢查結果。
 - Auto Mode 進入條件。
+- 必要時套用 `schema/templates/confirm_plan.md`。
 
 ### 檢查
 
@@ -198,6 +199,7 @@
 - Producer Agent 任務。
 - Evaluator Agent 任務。
 - 最終整合結果。
+- 必要時套用 `schema/templates/subagent_task.md`。
 
 ### 檢查
 
@@ -230,3 +232,57 @@
 - E 是否沒有 Major Gap？
 - 是否完整顯示評估？
 - 若未達標，是否停止交付並退回修正？
+
+## Skill 10：Connector Router Skill
+
+### 何時使用
+
+- 任務需要 Gmail、Calendar、Drive、GitHub、Canva、Slack、Line、音檔轉錄、Browser 或 Web Search。
+- 任務需要判斷 connector 是否已授權、可用或需要替代資料來源。
+
+### 輸入
+
+- 使用者任務。
+- `schema/MCP_CONNECTOR_MAP.md`。
+- 可用 connector 與授權狀態。
+
+### 產出
+
+- 建議使用的 connector。
+- 備援資料取得方式。
+- 可執行動作與需再次確認的動作。
+- 失敗回報或 no-hit 回報格式。
+
+### 檢查
+
+- 是否維持先草稿後確認？
+- 是否避免未授權寄送、排程、刪除、分享或承諾？
+- 無 connector 時是否提供貼上文字、截圖、附件或手動匯出的替代方式？
+
+## Skill 11：Delivery Archive Skill
+
+### 何時使用
+
+- 正式交付物已通過 ABCDE evaluator gate。
+- 任務產出文件、簡報、表格、草稿、會議紀錄、投標文件或活動企劃。
+
+### 輸入
+
+- 交付物。
+- 來源清單。
+- ABCDE 評估。
+- 對應專案頁或決策頁。
+
+### 產出
+
+- 交付封存紀錄。
+- 專案頁更新。
+- 後續待辦。
+- 必要時更新 schema、workflow 或 automation status。
+
+### 檢查
+
+- 是否連回專案頁？
+- 是否保留來源與日期？
+- 是否保存 ABCDE 結論？
+- 是否把後續待辦寫成標準 checkbox？
