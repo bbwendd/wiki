@@ -2,6 +2,25 @@
 
 本知識庫的目標是建立「工作型第二大腦複製人」，不是一般筆記庫。
 
+## 強制治理流程
+
+所有任務都必須遵守：
+
+1. Plan Mode：收斂需求，形成可執行計畫。
+2. Confirm Plan：使用者必須明確確認計畫。
+3. Auto Mode：確認後才可執行。
+4. Evaluator Gate：交付前依 ABCDE rubric 完整自評。
+
+規則詳見：
+
+- `schema/EXECUTION_MODE_RULES.md`
+- `schema/CONFIRM_PLAN_CHECKLIST.md`
+- `schema/SUB_AGENT_RULES.md`
+- `schema/ABCDE_RUBRIC.md`
+- `schema/EVAL_CHECKLIST.md`
+
+未達 ABCDE gate 時不可交付，必須退回修正。
+
 ## 固定架構
 
 - `raw`：原始證據層。
@@ -19,11 +38,14 @@
 
 收到新資料時：
 
-1. 放入或引用 `raw`。
-2. 抽取可重複使用的事實。
-3. 更新對應的 `wiki` 頁。
-4. 若形成固定做法，更新 `schema` 或 `wiki/workflows`。
-5. 若需要週期執行，記錄到 `automations`。
+1. 先進 Plan Mode。
+2. 通過 Confirm Plan 後才進 Auto Mode。
+3. 放入或引用 `raw`。
+4. 抽取可重複使用的事實。
+5. 更新對應的 `wiki` 頁。
+6. 若形成固定做法，更新 `schema` 或 `wiki/workflows`。
+7. 若需要週期執行，記錄到 `automations`。
+8. 交付前執行 ABCDE Evaluator Gate。
 
 若使用者要求建立或改善第二大腦，先補齊每層規則與 skill map，再建立具體專案頁或自動化。
 
@@ -44,6 +66,7 @@
 
 ## 回答前檢查
 
+- 是否仍在 Plan Mode，尚未取得 Confirm Plan？
 - 這是事實、推論，還是待確認？
 - 是否有來源？
 - 是否應該更新專案頁？
@@ -56,6 +79,9 @@
 
 - 不要用漂亮摘要取代來源證據。
 - 不要把多個版本的來源混成一個無法追溯的版本。
+- 不要跳過 Plan Mode。
+- 不要未經 Confirm Plan 直接進入 Auto Mode。
+- 不要未做 ABCDE 評估就交付。
 - 不要自動寄出信件或對外承諾。
 - 不要刪除原始資料。
 

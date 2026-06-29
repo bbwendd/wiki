@@ -156,3 +156,77 @@
 - 是否已對應到 `schema/CAPABILITY_MAP.md` 的 8 大模組？
 - 是否有至少一個 workflow 或模板可用？
 - 是否涉及對外行動，需要先草稿後確認？
+
+## Skill 7：Plan Controller Skill
+
+### 何時使用
+
+- 所有任務一開始都使用。
+
+### 輸入
+
+- 使用者需求。
+- repo 狀態、schema、wiki、raw、外部來源。
+
+### 產出
+
+- Plan Mode 計畫。
+- Confirm Plan 檢查結果。
+- Auto Mode 進入條件。
+
+### 檢查
+
+- 是否有目標、交付物、資料來源、驗證方式？
+- 是否列出風險與不可交付條件？
+- 是否已取得明確 Confirm Plan？
+
+## Skill 8：Sub-agent Orchestrator Skill
+
+### 何時使用
+
+- 複雜任務、正式文件、標案、活動、簡報、會議整理或跨資料來源任務。
+
+### 輸入
+
+- Confirmed plan。
+- raw / wiki / schema。
+- 外部來源或 MCP connector 結果。
+
+### 產出
+
+- Research / Source Agent 任務。
+- Producer Agent 任務。
+- Evaluator Agent 任務。
+- 最終整合結果。
+
+### 檢查
+
+- Producer 是否基於 wiki 與來源？
+- Evaluator 是否完整執行 ABCDE？
+- 未通過時是否退回修正？
+
+## Skill 9：Evaluator Gate Skill
+
+### 何時使用
+
+- 每次正式交付前。
+
+### 輸入
+
+- 交付物。
+- Confirmed plan。
+- 來源清單。
+- 對應 workflow、template、schema。
+
+### 產出
+
+- 完整 ABCDE 評估。
+- 可交付 / 不可交付結論。
+- 若不可交付，列缺口與修正方式。
+
+### 檢查
+
+- A-D 是否全部 Pass？
+- E 是否沒有 Major Gap？
+- 是否完整顯示評估？
+- 若未達標，是否停止交付並退回修正？

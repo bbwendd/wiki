@@ -10,11 +10,14 @@
 
 AI 或人員進入本資料夾時，請先讀：
 
-1. `schema/_system/START_HERE.md`
-2. `schema/AGENTS.md`
-3. `schema/GITHUB_WORKFLOW_REFERENCES.md`
-4. `wiki/首頁.md`
-5. `wiki/dashboards/工作總覽.md`
+1. `AGENTS.md`
+2. `schema/_system/START_HERE.md`
+3. `schema/EXECUTION_MODE_RULES.md`
+4. `schema/CONFIRM_PLAN_CHECKLIST.md`
+5. `schema/SUB_AGENT_RULES.md`
+6. `schema/ABCDE_RUBRIC.md`
+7. `wiki/首頁.md`
+8. `wiki/dashboards/工作總覽.md`
 
 ## Karpathy 方法在這裡的做法
 
@@ -31,6 +34,18 @@ AI 或人員進入本資料夾時，請先讀：
 - 支援計畫書、簡報、會議整理、Email 回覆追蹤與專案待辦。
 - 讓 AI 回答時能先查規則、再查整理頁，需要證據時才查原始資料。
 - 外部行動採「先草稿後確認」，不自動寄信、不自動承諾。
+
+## 標準工作流程
+
+所有任務都採用以下流程：
+
+1. Plan Mode：先釐清目標、交付物、資料來源、風險與驗證方式。
+2. Confirm Plan：使用者必須明確回覆「確認計畫」或同義確認文字。
+3. Auto Mode：確認後才可執行、修改檔案、產出正式交付物。
+4. Sub-agent Flow：複雜任務依規則分派 Research、Producer、Evaluator 角色。
+5. ABCDE Gate：交付前完整自評；A-D 必過，E 不可有重大缺口。
+
+若 ABCDE 未達標準，不可交付，必須退回修正。
 
 ## 8 大能力模組
 
